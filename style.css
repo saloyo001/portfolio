@@ -1,0 +1,213 @@
+.nav-trigger {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 100vh;
+    z-index: 1001;
+}
+
+.navbar {
+    position: fixed;
+    left: -200px;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #333;
+    padding: 2em 1em;
+    box-sizing: border-box;
+    z-index: 1000;
+    transition: left 0.3s ease;
+}
+
+.navbar.open {
+    left: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 1.5em 0;
+}
+
+.navbar li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.main-content {
+    padding-top: 5em;
+    margin-left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    transition: margin-left 0.3s ease, width 0.3s ease;
+}
+
+.main-content.sidebar-open {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 2em;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hero {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero a {
+    background-color: white;
+    color: #333;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero a:hover {
+    background-color: #ddd;
+}
+
+#riddle {
+    width: calc(100% - 2em);
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    padding: 2em;
+    margin: 2em 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#riddle h2 {
+    margin-bottom: 1em;
+}
+
+#riddle-question {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+#answer-button {
+    padding: 0.7em 1.5em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#answer-button:hover {
+    background-color: #555;
+}
+
+#riddle-answer {
+    font-weight: bold;
+    color: #666;
+    margin-top: 1em;
+}
+
+#footer {
+    background-color: #222;
+    color: #fff;
+    padding: 2em;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    transition: margin-left 0.3s ease, width 0.3s ease;
+}
+
+#footer.sidebar-open {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+}
+.portfolio-header {
+    text-align: center;
+    padding: 50px 20px 20px;
+}
+
+.portfolio-header h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.portfolio-header p {
+    font-size: 18px;
+    color: #666;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+.portfolio-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    width: 280px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px #ddd;
+    text-align: center;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.portfolio-item h2 {
+    margin: 15px 0 10px;
+}
+
+.portfolio-item p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.project-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.project-button:hover {
+    background-color: #555;
+}
